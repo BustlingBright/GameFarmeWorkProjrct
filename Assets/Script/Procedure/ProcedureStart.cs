@@ -18,7 +18,7 @@ public class ProcedureStart : ProcedureBase
         EventComponent event1 = GameEntry.GetComponent<EventComponent>();
 
         event1.Subscribe(LoadConfigSuccessEventArgs.EventId, Config1);
-        data.LoadDataTable<FormConfig>("FormConfig", "Assest/Configs/FormConfig");
+        data.LoadDataTable<FormConfig>("FormConfig.txt", "Assets/Configs/FormConfig.txt");
     }
 
     private void Config1(object sender,GameFramework.Event.GameEventArgs e)

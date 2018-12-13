@@ -50,14 +50,15 @@ public class FormConfig:IDataRow
 
     public void ParseDataRow(string dataRowText)
     {
-        string[] text = dataRowText.Split('\t');
-        int index = 0;
-        index++; // 跳过注释列
-        Id = int.Parse(text[index++]);
-        index++; // 跳过备注列
-        ScenePosition = text[index++];
-        SceneName = text[index++];
-        SceneGroup = text[index++];
+        Debug.Log(dataRowText);
+        //string[] text = dataRowText.Split('\t');
+        //int index = 0;
+        //index++; // 跳过注释列
+        //Id = int.Parse(text[index++]);
+        //index++; // 跳过备注列
+        //ScenePosition = text[index++];
+        //SceneName = text[index++];
+        //SceneGroup = text[index++];
         //BackgroundMusicId = int.Parse(text[index++]);
         //http://gameframework.cn/archives/235
     }
