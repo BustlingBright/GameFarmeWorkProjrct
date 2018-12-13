@@ -55,8 +55,9 @@ public class FormConfig:IDataRow
         index++; // 跳过注释列
         Id = int.Parse(text[index++]);
         index++; // 跳过备注列
-        //Name = text[index++];
-        //AssetName = text[index++];
+        ScenePosition = text[index++];
+        SceneName = text[index++];
+        SceneGroup = text[index++];
         //BackgroundMusicId = int.Parse(text[index++]);
         //http://gameframework.cn/archives/235
     }
