@@ -27,18 +27,31 @@ public class StartForm :UIFormLogic
         base.OnOpen(userData);
 		_resigerBtn.onClick.AddListener(OnResigerClick);
 		_nameEnterBtn.onClick.AddListener (OnNameLoginClick);
+        _exitBtn.onClick.AddListener(OnExitClick);
+        //////////////////////////快速游戏
 
     }
 
     /// <summary>
-    /// open ResigerForm ClickAction
+    /// 退出游戏
+    /// </summary>
+    private void OnExitClick()
+    {
+        _ui.CloseUIForm(UIForm);
+        Application.Quit();
+    }
+
+    /// <summary>
+    /// 打开注册UI
 	/// </summary>
 	private void OnResigerClick()
 	{
 		_ui.CloseUIForm (UIForm);
 		_ui.OpenUIForm ("Assets/UI/ResigerForm.prefab", "defaultGroup");
 	}
-
+    /// <summary>
+    /// 打开账号密码登录UI
+    /// </summary>
 	private void OnNameLoginClick()
 	{
 		_ui.CloseUIForm (UIForm);
@@ -49,7 +62,7 @@ public class StartForm :UIFormLogic
 
     protected  internal override void OnClose(object userData)
     {
-        base.OnClose(userData);
+        
     }
 
     protected override void InternalSetVisible(bool visible)
