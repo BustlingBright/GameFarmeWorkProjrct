@@ -480,6 +480,12 @@ namespace UnityGameFramework.Runtime
             return OpenUIForm(uiFormAssetName, uiGroupName, DefaultPriority, false, null);
         }
 
+        public int OpenUIForm(ConfigEnum configEnum)
+        {
+            FormConfig temp = ConfigManger.GetConfig<FormConfig>((int)configEnum);
+            return OpenUIForm(temp.ScenePosition + temp.SceneName, temp.SceneGroup);
+        }
+
         /// <summary>
         /// 打开界面。
         /// </summary>

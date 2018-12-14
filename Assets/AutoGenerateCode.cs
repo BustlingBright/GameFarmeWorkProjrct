@@ -74,9 +74,9 @@ namespace UnityGameFramework.Editor
             string[] textOfTableNames = info[0].Split('\t');
             string textOfTableName = textOfTableNames[1];
 
-            string[] textOfPropertyNames = info[1].Split('\t');
+            string[] textOfPropertyNames = info[2].Split('\t');
           
-            string[] textOfPropertyTypeNames= info[2].Split('\t');
+            string[] textOfPropertyTypeNames= info[3].Split('\t');
            
 
             StreamWriter sw;

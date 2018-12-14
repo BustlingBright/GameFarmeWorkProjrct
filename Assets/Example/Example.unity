@@ -237,7 +237,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11454530, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
       propertyPath: m_UIGroups.Array.data[0].m_Name
-      value: defaultGroup
+      value: StartGroup
       objectReference: {fileID: 0}
     - target: {fileID: 11454530, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
       propertyPath: m_UIGroupHelperTypeName
@@ -359,8 +359,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1495950205}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 308, y: 155, z: 0}
-  m_LocalScale: {x: 0.5422535, y: 0.5422535, z: 0.5422535}
+  m_LocalPosition: {x: 522.5, y: 254, z: 0}
+  m_LocalScale: {x: 0.91989434, y: 0.91989434, z: 0.91989434}
   m_Children:
   - {fileID: 1458091906}
   m_Father: {fileID: 0}

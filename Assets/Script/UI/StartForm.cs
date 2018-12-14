@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class StartForm :UIFormLogic
 {
-    private Button _resigerBtn;
+    private Button _registerBtn;
     private Button _nameEnterBtn;
     private Button _exitBtn;
     private Button _fastBtn;
@@ -16,7 +16,7 @@ public class StartForm :UIFormLogic
     protected internal override void OnInit(object userData)
     {
         base.OnInit(userData);
-        _resigerBtn = transform.Find("Btns/ResigerBtn").GetComponent<Button>();
+        _registerBtn = transform.Find("Btns/ResigerBtn").GetComponent<Button>();
         _nameEnterBtn = transform.Find("Btns/LoginBtn").GetComponent<Button>();
         _exitBtn = transform.Find("Btns/ExitBtn").GetComponent<Button>();
         _fastBtn = transform.Find("Btns/FastBtn").GetComponent<Button>();
@@ -25,7 +25,7 @@ public class StartForm :UIFormLogic
     protected internal override void OnOpen(object userData)
     {
         base.OnOpen(userData);
-		_resigerBtn.onClick.AddListener(OnResigerClick);
+		_registerBtn.onClick.AddListener(OnResigerClick);
 		_nameEnterBtn.onClick.AddListener (OnNameLoginClick);
         _exitBtn.onClick.AddListener(OnExitClick);
         //////////////////////////快速游戏
@@ -47,7 +47,7 @@ public class StartForm :UIFormLogic
 	private void OnResigerClick()
 	{
 		_ui.CloseUIForm (UIForm);
-		_ui.OpenUIForm ("Assets/UI/ResigerForm.prefab", "defaultGroup");
+        _ui.OpenUIForm(ConfigEnum.ResigerForm);
 	}
     /// <summary>
     /// 打开账号密码登录UI
@@ -55,19 +55,16 @@ public class StartForm :UIFormLogic
 	private void OnNameLoginClick()
 	{
 		_ui.CloseUIForm (UIForm);
-		_ui.OpenUIForm ("Assets/UI/ResigerForm.prefab", "defaultGroup");
-
+        FormConfig _formConfig = ConfigManger.GetConfig<FormConfig>((int)ConfigEnum.NameLoginForm);
+        _ui.OpenUIForm(_formConfig.ScenePosition + _formConfig.SceneName, _formConfig.SceneGroup);
 	}
 
 
     protected  internal override void OnClose(object userData)
     {
-        
-    }
-
-    protected override void InternalSetVisible(bool visible)
-    {
-        base.InternalSetVisible(visible);
+        _registerBtn.onClick.RemoveListener(OnResigerClick);
+        _nameEnterBtn.onClick.RemoveListener(OnNameLoginClick);
+        _exitBtn.onClick.RemoveListener(OnExitClick);
     }
 
 }

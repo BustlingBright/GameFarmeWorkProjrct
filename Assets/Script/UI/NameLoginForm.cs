@@ -6,7 +6,8 @@ using UnityGameFramework.Runtime;
 using UnityEngine.UI;
 using System;
 
-public class LoginForm : UIFormLogic{
+public class NameLoginForm : UIFormLogic
+{
 
     private UIComponent _ui;
     private Button _enterBtn;
@@ -21,21 +22,35 @@ public class LoginForm : UIFormLogic{
         base.OnInit(userData);
 
         _ui = GameEntry.GetComponent<UIComponent>();
-        _nameInput = transform.Find("Btns/Name").GetComponent<InputField>();
-        _passwordInput = transform.Find("Btns/Password").GetComponent<InputField>();
+        _nameInput = transform.Find("Btns/Name/NameInput").GetComponent<InputField>();
+        _passwordInput = transform.Find("Btns/Password/PasswordInput").GetComponent<InputField>();
 
         _enterBtn = transform.Find("Btns/EnterBtn").GetComponent<Button>();
-        _exitBtn= transform.Find("Btns/ExitBtn").GetComponent<Button>();
-        _registerBt= transform.Find("Btns/ResigerBtn").GetComponent<Button>();
+        _exitBtn = transform.Find("Btns/ExitBtn").GetComponent<Button>();
+        _registerBt = transform.Find("Btns/ResigerBtn").GetComponent<Button>();
     }
-    protected internal override void OnOpen (object userData)
-	{
-		base.OnOpen (userData);
+    protected internal override void OnOpen(object userData)
+    {
+        base.OnOpen(userData);
 
         _enterBtn.onClick.AddListener(OnEnterClick);
         _exitBtn.onClick.AddListener(OnExitClick);
         _registerBt.onClick.AddListener(OnRegisterClick);
-	}
+    }
+
+    protected internal override void OnClose(object userData)
+    {
+        base.OnClose(userData);
+        _enterBtn.onClick.RemoveListener(OnEnterClick);
+        _exitBtn.onClick.RemoveListener(OnExitClick);
+        _registerBt.onClick.RemoveListener(OnRegisterClick);
+    }
+    
+    private void RemoveAllText()
+    {
+        _nameInput.text = string.Empty;
+        _passwordInput.text = string.Empty;
+    }
 
     /// <summary>
     /// 注册按钮响应事件
@@ -51,6 +66,7 @@ public class LoginForm : UIFormLogic{
     /// </summary>
     private void OnExitClick()
     {
+        RemoveAllText();
         _ui.CloseUIForm(UIForm);
         _ui.OpenUIForm(ConfigEnum.StartForm);
     }
