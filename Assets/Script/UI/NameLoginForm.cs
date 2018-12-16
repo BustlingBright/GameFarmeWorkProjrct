@@ -9,7 +9,6 @@ using System;
 public class NameLoginForm : UIFormLogic
 {
 
-    private UIComponent _ui;
     private Button _enterBtn;
     private Button _exitBtn;
     private Button _registerBt;
@@ -21,7 +20,7 @@ public class NameLoginForm : UIFormLogic
     {
         base.OnInit(userData);
 
-        _ui = GameEntry.GetComponent<UIComponent>();
+
         _nameInput = transform.Find("Btns/Name/NameInput").GetComponent<InputField>();
         _passwordInput = transform.Find("Btns/Password/PasswordInput").GetComponent<InputField>();
 
@@ -45,7 +44,7 @@ public class NameLoginForm : UIFormLogic
         _exitBtn.onClick.RemoveListener(OnExitClick);
         _registerBt.onClick.RemoveListener(OnRegisterClick);
     }
-    
+
     private void RemoveAllText()
     {
         _nameInput.text = string.Empty;
@@ -57,8 +56,8 @@ public class NameLoginForm : UIFormLogic
     /// </summary>
     private void OnRegisterClick()
     {
-        _ui.CloseUIForm(UIForm);
-        _ui.OpenUIForm(ConfigEnum.ResigerForm);
+        UIManger.Instance._UIComponent.CloseUIForm(UIForm);
+        UIManger.Instance._UIComponent.OpenUIForm(ConfigEnum.ResigerForm);
     }
 
     /// <summary>
@@ -67,8 +66,8 @@ public class NameLoginForm : UIFormLogic
     private void OnExitClick()
     {
         RemoveAllText();
-        _ui.CloseUIForm(UIForm);
-        _ui.OpenUIForm(ConfigEnum.StartForm);
+        UIManger.Instance._UIComponent.CloseUIForm(UIForm);
+        UIManger.Instance._UIComponent.OpenUIForm(ConfigEnum.StartForm);
     }
 
 

@@ -11,7 +11,6 @@ public class StartForm :UIFormLogic
     private Button _nameEnterBtn;
     private Button _exitBtn;
     private Button _fastBtn;
-    private UIComponent _ui;
 
     protected internal override void OnInit(object userData)
     {
@@ -20,7 +19,6 @@ public class StartForm :UIFormLogic
         _nameEnterBtn = transform.Find("Btns/LoginBtn").GetComponent<Button>();
         _exitBtn = transform.Find("Btns/ExitBtn").GetComponent<Button>();
         _fastBtn = transform.Find("Btns/FastBtn").GetComponent<Button>();
-        _ui = GameEntry.GetComponent<UIComponent>();
     }
     protected internal override void OnOpen(object userData)
     {
@@ -28,16 +26,24 @@ public class StartForm :UIFormLogic
 		_registerBtn.onClick.AddListener(OnResigerClick);
 		_nameEnterBtn.onClick.AddListener (OnNameLoginClick);
         _exitBtn.onClick.AddListener(OnExitClick);
-        //////////////////////////快速游戏
+        _fastBtn.onClick.AddListener(OnFastGameClick);
+    }
+
+    private void OnFastGameClick()
+    {
+        UIManger.Instance._UIComponent.CloseUIForm(UIForm);
+        UIManger.Instance._UIComponent.OpenUIForm(ConfigEnum.FastLoginForm);
+
 
     }
+
 
     /// <summary>
     /// 退出游戏
     /// </summary>
     private void OnExitClick()
     {
-        _ui.CloseUIForm(UIForm);
+        UIManger.Instance._UIComponent.CloseUIForm(UIForm);
         Application.Quit();
     }
 
@@ -45,19 +51,18 @@ public class StartForm :UIFormLogic
     /// 打开注册UI
 	/// </summary>
 	private void OnResigerClick()
-	{
-		_ui.CloseUIForm (UIForm);
-        _ui.OpenUIForm(ConfigEnum.ResigerForm);
-	}
+    {
+        UIManger.Instance._UIComponent.CloseUIForm(UIForm);
+        UIManger.Instance._UIComponent.OpenUIForm(ConfigEnum.ResigerForm);
+    }
     /// <summary>
     /// 打开账号密码登录UI
     /// </summary>
 	private void OnNameLoginClick()
-	{
-		_ui.CloseUIForm (UIForm);
-        FormConfig _formConfig = ConfigManger.GetConfig<FormConfig>((int)ConfigEnum.NameLoginForm);
-        _ui.OpenUIForm(_formConfig.ScenePosition + _formConfig.SceneName, _formConfig.SceneGroup);
-	}
+    {
+        UIManger.Instance._UIComponent.CloseUIForm(UIForm);
+        UIManger.Instance._UIComponent.OpenUIForm(ConfigEnum.NameLoginForm);
+    }
 
 
     protected  internal override void OnClose(object userData)

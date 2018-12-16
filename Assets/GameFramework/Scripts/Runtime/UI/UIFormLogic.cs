@@ -97,7 +97,7 @@ namespace UnityGameFramework.Runtime
             {
                 CachedTransform = transform;
             }
-
+            transform.localPosition = Vector3.zero;
             m_OriginalLayer = gameObject.layer;
         }
 
@@ -107,7 +107,7 @@ namespace UnityGameFramework.Runtime
         /// <param name="userData">用户自定义数据。</param>
         protected internal virtual void OnOpen(object userData)
         {
-            transform.localPosition = Vector3.zero;
+
             m_Available = true;
             Visible = true;
         }

@@ -287,7 +287,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 224934739814728318}
-  - component: {fileID: 114472778271342816}
+  - component: {fileID: 114800409070373916}
   m_Layer: 5
   m_Name: ResigerForm
   m_TagString: Untagged
@@ -702,17 +702,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114472778271342816
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1759567692147878}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d59225376c38774eb0699ae6011b858, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114574980726876450
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1022,6 +1011,17 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 
+--- !u!114 &114800409070373916
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1759567692147878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d59225376c38774eb0699ae6011b858, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114948435685361082
 MonoBehaviour:
   m_ObjectHideFlags: 1
