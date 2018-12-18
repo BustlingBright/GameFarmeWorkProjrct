@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 6b369d195893b5b4bbde62fb7b221878
-timeCreated: 1544944107
-licenseType: Free
+timeCreated: 1545113707
+licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
     21300000: CommonUIAtlas_0
@@ -14,6 +14,10 @@ TextureImporter:
     21300014: CommonUIAtlas_7
     21300016: CommonUIAtlas_8
     21300018: CommonUIAtlas_9
+    21300020: CommonUIAtlas_10
+    21300022: CommonUIAtlas_11
+    21300024: CommonUIAtlas_12
+    21300026: CommonUIAtlas_13
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -223,6 +227,62 @@ TextureImporter:
         height: 10
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CommonUIAtlas_10
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 98
+        width: 68
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 33, y: 13, z: 33, w: 13}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CommonUIAtlas_11
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 518
+        width: 158
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 70, y: 13, z: 70, w: 13}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CommonUIAtlas_12
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 694
+        width: 55
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CommonUIAtlas_13
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 909
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

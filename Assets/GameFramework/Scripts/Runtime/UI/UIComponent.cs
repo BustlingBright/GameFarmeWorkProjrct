@@ -480,12 +480,22 @@ namespace UnityGameFramework.Runtime
             return OpenUIForm(uiFormAssetName, uiGroupName, DefaultPriority, false, null);
         }
 
+        /// <summary>
+        /// 打开界面（附加）
+        /// </summary>
+        /// <param name="configEnum"></param>
+        /// <returns></returns>
         public int OpenUIForm(ConfigEnum configEnum)
         {
-            FormConfig temp = ConfigManger.GetConfig<FormConfig>((int)configEnum);
-            return OpenUIForm(temp.ScenePosition + temp.SceneName, temp.SceneGroup);
+            FormConfig fc = ConfigManger.Instance.GetConfig<FormConfig>((int)configEnum);
+            return OpenUIForm(fc.ScenePosition + fc.SceneName, fc.SceneGroup);
         }
 
+        public int OpenUIForm(ConfigEnum configEnum,object userData)
+        {
+            FormConfig fc = ConfigManger.Instance.GetConfig<FormConfig>((int)configEnum);
+            return OpenUIForm(fc.ScenePosition + fc.SceneName, fc.SceneGroup, userData);
+        }
         /// <summary>
         /// 打开界面。
         /// </summary>
@@ -572,7 +582,6 @@ namespace UnityGameFramework.Runtime
         /// <returns>界面的序列编号。</returns>
         public int OpenUIForm(string uiFormAssetName, string uiGroupName, int priority, bool pauseCoveredUIForm, object userData)
         {
-			
             return m_UIManager.OpenUIForm(uiFormAssetName, uiGroupName, priority, pauseCoveredUIForm, userData);
         }
 

@@ -1,0 +1,130 @@
+fileFormatVersion: 2
+guid: 74289ef635a11db4cb2dfb835fadca6f
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: shizhu1
+    100004: shizhu10
+    100006: shizhu11
+    100008: shizhu12
+    100010: shizhu13
+    100012: shizhu14
+    100014: shizhu2
+    100016: shizhu3
+    100018: shizhu4
+    100020: shizhu5
+    100022: shizhu6
+    100024: shizhu7
+    100026: shizhu8
+    100028: shizhu9
+    400000: //RootNode
+    400002: shizhu1
+    400004: shizhu10
+    400006: shizhu11
+    400008: shizhu12
+    400010: shizhu13
+    400012: shizhu14
+    400014: shizhu2
+    400016: shizhu3
+    400018: shizhu4
+    400020: shizhu5
+    400022: shizhu6
+    400024: shizhu7
+    400026: shizhu8
+    400028: shizhu9
+    2300000: shizhu1
+    2300002: shizhu10
+    2300004: shizhu11
+    2300006: shizhu12
+    2300008: shizhu13
+    2300010: shizhu14
+    2300012: shizhu2
+    2300014: shizhu3
+    2300016: shizhu4
+    2300018: shizhu5
+    2300020: shizhu6
+    2300022: shizhu7
+    2300024: shizhu8
+    2300026: shizhu9
+    3300000: shizhu1
+    3300002: shizhu10
+    3300004: shizhu11
+    3300006: shizhu12
+    3300008: shizhu13
+    3300010: shizhu14
+    3300012: shizhu2
+    3300014: shizhu3
+    3300016: shizhu4
+    3300018: shizhu5
+    3300020: shizhu6
+    3300022: shizhu7
+    3300024: shizhu8
+    3300026: shizhu9
+    4300000: shizhu1
+    4300002: shizhu2
+    4300004: shizhu3
+    4300006: shizhu4
+    4300008: shizhu5
+    4300010: shizhu6
+    4300012: shizhu7
+    4300014: shizhu11
+    4300016: shizhu10
+    4300018: shizhu9
+    4300020: shizhu8
+    4300022: shizhu12
+    4300024: shizhu13
+    4300026: shizhu14
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  userData: 

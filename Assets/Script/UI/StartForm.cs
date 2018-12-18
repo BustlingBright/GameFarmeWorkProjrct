@@ -11,10 +11,12 @@ public class StartForm :UIFormLogic
     private Button _nameEnterBtn;
     private Button _exitBtn;
     private Button _fastBtn;
+    object _userData;
 
     protected internal override void OnInit(object userData)
     {
         base.OnInit(userData);
+        _userData = userData;
         _registerBtn = transform.Find("Btns/ResigerBtn").GetComponent<Button>();
         _nameEnterBtn = transform.Find("Btns/LoginBtn").GetComponent<Button>();
         _exitBtn = transform.Find("Btns/ExitBtn").GetComponent<Button>();
@@ -32,9 +34,7 @@ public class StartForm :UIFormLogic
     private void OnFastGameClick()
     {
         UIManger.Instance._UIComponent.CloseUIForm(UIForm);
-        UIManger.Instance._UIComponent.OpenUIForm(ConfigEnum.FastLoginForm);
-
-
+        UIManger.Instance._UIComponent.OpenUIForm(ConfigEnum.FastLoginForm,_userData);
     }
 
 
@@ -70,6 +70,7 @@ public class StartForm :UIFormLogic
         _registerBtn.onClick.RemoveListener(OnResigerClick);
         _nameEnterBtn.onClick.RemoveListener(OnNameLoginClick);
         _exitBtn.onClick.RemoveListener(OnExitClick);
+        _fastBtn.onClick.RemoveListener(OnFastGameClick);
     }
 
 }

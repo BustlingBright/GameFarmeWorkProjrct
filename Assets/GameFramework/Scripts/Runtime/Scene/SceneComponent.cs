@@ -205,6 +205,12 @@ namespace UnityGameFramework.Runtime
             LoadScene(sceneAssetName, DefaultPriority, null);
         }
 
+        public void LoadScene(SceneLoadEnum scene)
+        {
+            LoadScene("Assets/Scene/" + scene + ".unity");
+            
+        }
+
         /// <summary>
         /// 加载场景。
         /// </summary>

@@ -9,6 +9,7 @@ public class FastLoginForm:UIFormLogic
 {
     private Button _enter;
     private Button _exit;
+    private ProcedureMain proCom;
     protected internal override void OnInit(object userData)
     {
         base.OnInit(userData);
@@ -19,6 +20,7 @@ public class FastLoginForm:UIFormLogic
     protected internal override void OnOpen(object userData)
     {
         base.OnOpen(userData);
+        proCom = (ProcedureMain)userData;
         _enter.onClick.AddListener(OnEnterClick);
         _exit.onClick.AddListener(OnExitClick);
     }
@@ -28,15 +30,16 @@ public class FastLoginForm:UIFormLogic
     /// </summary>
     private void OnExitClick()
     {
-        UIManger.Instance._UIComponent.CloseUIForm(UIForm);
         UIManger.Instance._UIComponent.OpenUIForm(ConfigEnum.StartForm);
+        UIManger.Instance._UIComponent.CloseUIForm(UIForm);
     }
 
     protected internal override void OnClose(object userData)
     {
         base.OnClose(userData);
-        _enter.onClick.RemoveListener(OnEnterClick);
-        _exit.onClick.RemoveListener(OnExitClick);
+
+        _enter.onClick.RemoveAllListeners();
+        _exit.onClick.RemoveAllListeners();
     }
 
     /// <summary>
@@ -44,7 +47,8 @@ public class FastLoginForm:UIFormLogic
     /// </summary>
     private void OnEnterClick()
     {
-        ////////////
+        UIManger.Instance._UIComponent.CloseUIForm(UIForm);
+        proCom.Load();
     }
 }
 

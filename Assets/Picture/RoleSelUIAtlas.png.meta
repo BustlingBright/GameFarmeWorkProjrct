@@ -1,0 +1,1135 @@
+fileFormatVersion: 2
+guid: 4dda51d0bd2ba1d4fb3095254fdd1873
+timeCreated: 1545026580
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: RoleSelUIAtlas_0
+    21300002: RoleSelUIAtlas_1
+    21300004: RoleSelUIAtlas_2
+    21300006: RoleSelUIAtlas_3
+    21300008: RoleSelUIAtlas_5
+    21300010: RoleSelUIAtlas_6
+    21300012: RoleSelUIAtlas_8
+    21300014: RoleSelUIAtlas_9
+    21300016: RoleSelUIAtlas_10
+    21300018: RoleSelUIAtlas_11
+    21300020: RoleSelUIAtlas_12
+    21300022: RoleSelUIAtlas_13
+    21300024: RoleSelUIAtlas_14
+    21300026: RoleSelUIAtlas_15
+    21300028: RoleSelUIAtlas_16
+    21300030: RoleSelUIAtlas_17
+    21300032: RoleSelUIAtlas_18
+    21300034: RoleSelUIAtlas_19
+    21300036: RoleSelUIAtlas_20
+    21300038: RoleSelUIAtlas_21
+    21300040: RoleSelUIAtlas_22
+    21300042: RoleSelUIAtlas_23
+    21300044: RoleSelUIAtlas_24
+    21300046: RoleSelUIAtlas_25
+    21300048: RoleSelUIAtlas_26
+    21300050: RoleSelUIAtlas_27
+    21300052: RoleSelUIAtlas_28
+    21300054: RoleSelUIAtlas_29
+    21300056: RoleSelUIAtlas_30
+    21300058: RoleSelUIAtlas_31
+    21300060: RoleSelUIAtlas_32
+    21300062: RoleSelUIAtlas_33
+    21300064: RoleSelUIAtlas_34
+    21300066: RoleSelUIAtlas_35
+    21300068: RoleSelUIAtlas_36
+    21300070: RoleSelUIAtlas_37
+    21300072: RoleSelUIAtlas_38
+    21300074: RoleSelUIAtlas_39
+    21300076: RoleSelUIAtlas_40
+    21300078: RoleSelUIAtlas_41
+    21300080: RoleSelUIAtlas_42
+    21300082: RoleSelUIAtlas_43
+    21300084: RoleSelUIAtlas_44
+    21300086: RoleSelUIAtlas_45
+    21300088: RoleSelUIAtlas_46
+    21300090: RoleSelUIAtlas_47
+    21300092: RoleSelUIAtlas_48
+    21300094: RoleSelUIAtlas_49
+    21300096: RoleSelUIAtlas_50
+    21300098: RoleSelUIAtlas_51
+    21300100: RoleSelUIAtlas_52
+    21300102: RoleSelUIAtlas_53
+    21300104: RoleSelUIAtlas_54
+    21300106: RoleSelUIAtlas_55
+    21300108: RoleSelUIAtlas_56
+    21300110: RoleSelUIAtlas_57
+    21300112: RoleSelUIAtlas_58
+    21300114: RoleSelUIAtlas_59
+    21300116: RoleSelUIAtlas_60
+    21300118: RoleSelUIAtlas_61
+    21300120: RoleSelUIAtlas_62
+    21300122: RoleSelUIAtlas_63
+    21300124: RoleSelUIAtlas_64
+    21300126: RoleSelUIAtlas_65
+    21300128: RoleSelUIAtlas_66
+    21300130: RoleSelUIAtlas_67
+    21300132: RoleSelUIAtlas_68
+    21300134: RoleSelUIAtlas_69
+    21300136: RoleSelUIAtlas_70
+    21300138: RoleSelUIAtlas_71
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 983
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 983
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_2
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 983
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_3
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 904
+        width: 88
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 873
+        width: 91
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_6
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 808
+        width: 88
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_8
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 886
+        width: 93
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 763
+        width: 91
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_10
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 710
+        width: 91
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_11
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 788
+        width: 95
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 653
+        width: 91
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_13
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 612
+        width: 91
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_14
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 692
+        width: 95
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_15
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 639
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_16
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 595
+        width: 89
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_17
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 618
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 543
+        width: 91
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_19
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 514
+        width: 91
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_20
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 498
+        width: 92
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_21
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 573
+        width: 47
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 433
+        width: 91
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_23
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 416
+        width: 91
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_24
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 401
+        width: 92
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_25
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 480
+        width: 89
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 323
+        width: 91
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_27
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 318
+        width: 91
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_28
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 392
+        width: 89
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_29
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 348
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_30
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 304
+        width: 89
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_31
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 304
+        width: 89
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 213
+        width: 91
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_33
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 220
+        width: 91
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_34
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 207
+        width: 93
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_35
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 207
+        width: 89
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_36
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 207
+        width: 91
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_37
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 263
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_38
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 207
+        width: 89
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_39
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 263
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_40
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 207
+        width: 91
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_41
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 263
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_42
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 207
+        width: 89
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_43
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 207
+        width: 182
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_44
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 251
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_45
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 209
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_46
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 103
+        width: 91
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_47
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 110
+        width: 94
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_48
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 110
+        width: 89
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_49
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 110
+        width: 93
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_50
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 110
+        width: 92
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_51
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 110
+        width: 93
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_52
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 110
+        width: 92
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_53
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 110
+        width: 93
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_54
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 110
+        width: 92
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_55
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 110
+        width: 93
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_56
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 144
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_57
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 110
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_58
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 103
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_59
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 0
+        width: 91
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_60
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 0
+        width: 91
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_61
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 0
+        width: 91
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_62
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 98
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_63
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 91
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_64
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 0
+        width: 91
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_65
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 0
+        width: 91
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_66
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 0
+        width: 91
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_67
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 0
+        width: 91
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_68
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 0
+        width: 91
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_69
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 52
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_70
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 4
+        width: 43
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RoleSelUIAtlas_71
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 0
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

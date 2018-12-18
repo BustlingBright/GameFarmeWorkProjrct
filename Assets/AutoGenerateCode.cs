@@ -1,12 +1,4 @@
-﻿//------------------------------------------------------------
-// This file write for Game Framework v3.x
-// Which Copyright © 2013-2018 Jiang Yin. All rights reserved.
-// Homepage: http://gameframework.cn/
-// Feedback: mailto:jiangyin@gameframework.cn
-// The code write by Ron Tang.
-//------------------------------------------------------------
-
-using UnityEditor;
+﻿using UnityEditor;
 using UnityEngine;
 using System.IO;
 using System.Collections.Generic;
@@ -17,7 +9,7 @@ namespace UnityGameFramework.Editor
     /// <summary>
     /// 生成数据表行代码
     /// </summary>
-    internal static class AutoGenerateCode
+   internal  static class AutoGenerateCode
     {
         private static string tablePath = "\\Configs\\";
         private static string codePath = "\\Script\\Configs\\";
@@ -30,7 +22,7 @@ namespace UnityGameFramework.Editor
             //EditorUtility.ClearProgressBar();
 
             //路径  
-            string fullPath = Application.dataPath + tablePath ;
+            string fullPath = Application.dataPath + tablePath;
 
             //获取指定路径下面的所有资源文件  
             if (Directory.Exists(fullPath))
@@ -57,7 +49,7 @@ namespace UnityGameFramework.Editor
                 string line;
                 List<string> lines = new List<string>();
                 int lineCount = 0;
-                while ((line = sr.ReadLine()) != null && lineCount <4 )
+                while ((line = sr.ReadLine()) != null && lineCount < 4)
                 {
 
                     lines.Add(line);
@@ -75,12 +67,12 @@ namespace UnityGameFramework.Editor
             string textOfTableName = textOfTableNames[1];
 
             string[] textOfPropertyNames = info[2].Split('\t');
-          
-            string[] textOfPropertyTypeNames= info[3].Split('\t');
-           
+
+            string[] textOfPropertyTypeNames = info[3].Split('\t');
+
 
             StreamWriter sw;
-            FileInfo t = new FileInfo(Application.dataPath+ codePath + textOfTableName + ".cs");
+            FileInfo t = new FileInfo(Application.dataPath + codePath + textOfTableName + ".cs");
             sw = t.CreateText();
 
             WriteHeader(sw);
@@ -88,7 +80,7 @@ namespace UnityGameFramework.Editor
             sw.WriteLine(string.Format("public class {0} : IDataRow", textOfTableName));
             sw.WriteLine("{");
             WriteAllProperty(sw, textOfPropertyNames, textOfPropertyTypeNames);
-            WriteParseDataRow(sw, textOfPropertyNames,textOfPropertyTypeNames);
+            WriteParseDataRow(sw, textOfPropertyNames, textOfPropertyTypeNames);
             WriteAvoidJIT(sw, textOfTableName);
             sw.WriteLine("}");
             sw.Flush();
@@ -99,7 +91,7 @@ namespace UnityGameFramework.Editor
 
         static void WriteNameSpcace(StreamWriter sw, string name)
         {
-            sw.WriteLine("namespace "+ name);
+            sw.WriteLine("namespace " + name);
         }
 
         static void WriteAllProperty(StreamWriter sw, string[] textOfPropertyNames, string[] textOfPropertyTypeNames)
@@ -111,13 +103,13 @@ namespace UnityGameFramework.Editor
                 if (string.IsNullOrEmpty(textOfPropertyNames[i]))
                     continue;
                 WriteProperty(sw, textOfPropertyTypeNames[i], textOfPropertyNames[i]);
-               
+
             }
         }
 
         static void WriteHeader(StreamWriter sw)
         {
-            sw.WriteLine("using GameFramework.DataTable;") ;
+            sw.WriteLine("using GameFramework.DataTable;");
             sw.WriteLine("using System.Collections.Generic;");
         }
 
@@ -125,7 +117,7 @@ namespace UnityGameFramework.Editor
 
         static void WriteProperty(StreamWriter sw, string type, string name)
         {
-            sw.WriteLine("  public"+" "+type+" "+ name);
+            sw.WriteLine("  public" + " " + type + " " + name);
             sw.WriteLine("  {");
             sw.WriteLine("    get;");
             sw.WriteLine("    protected set;");
@@ -133,27 +125,27 @@ namespace UnityGameFramework.Editor
             sw.WriteLine("");
         }
 
-        static void WriteAvoidJIT(StreamWriter sw,string classTypeName)
+        static void WriteAvoidJIT(StreamWriter sw, string classTypeName)
         {
             sw.WriteLine("  private void AvoidJIT()");
             sw.WriteLine("  {");
-            sw.WriteLine("    "+string.Format("new Dictionary<int, {0} > ();", classTypeName));
+            sw.WriteLine("    " + string.Format("new Dictionary<int, {0} > ();", classTypeName));
             sw.WriteLine("  }");
-            
+
         }
 
-        static void WriteParseDataRow(StreamWriter sw,string[] names,string[] types)
+        static void WriteParseDataRow(StreamWriter sw, string[] names, string[] types)
         {
             sw.WriteLine("  public void ParseDataRow(string dataRowText)");
             sw.WriteLine("  {");
             sw.WriteLine("    string[] text = dataRowText.Split('\\t');");
             sw.WriteLine("    int index = 0;");
             sw.WriteLine("    index++;");
-            sw.WriteLine(string.Format("    {0} = {1}.Parse(text[index++]);",names[1],types[1]));
+            sw.WriteLine(string.Format("    {0} = {1}.Parse(text[index++]);", names[1], types[1]));
             //sw.WriteLine("    index++;");
             for (int i = 2; i < names.Length; i++)
             {
-                if(string.IsNullOrEmpty(names[i])) continue;
+                if (string.IsNullOrEmpty(names[i])) continue;
 
                 if (types[i] != "string")
                 {
@@ -164,11 +156,11 @@ namespace UnityGameFramework.Editor
                     sw.WriteLine(string.Format("    {0} = text[index++];", names[i]));
                 }
             }
-              
+
             sw.WriteLine("  }");
 
         }
 
-        
+
     }
 }

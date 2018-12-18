@@ -11,7 +11,10 @@ public class ProcedureStart : ProcedureBase
     protected override void OnEnter(IFsm<IProcedureManager> procedureOwner)
     {
         base.OnEnter(procedureOwner);
-        ConfigManger.LoadConfigs();
+        ConfigManger.Instance.LoadConfigs();
+        ////////////////////////////
+
+
     }
 
 
@@ -19,6 +22,9 @@ public class ProcedureStart : ProcedureBase
     {
         base.OnUpdate(procedureOwner, elapseSeconds, realElapseSeconds);
         ChangeState<ProcedureMain>(procedureOwner);
+  
+        SceneManger.Instance._SceneCompent.LoadScene(SceneLoadEnum.MainScene);
+
 
     }
 }
