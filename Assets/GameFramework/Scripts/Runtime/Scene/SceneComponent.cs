@@ -207,6 +207,7 @@ namespace UnityGameFramework.Runtime
 
         public void LoadScene(SceneLoadEnum scene)
         {
+            SceneManger.Instance.UnLoadAllScence();
             LoadScene("Assets/Scene/" + scene + ".unity");
             
         }

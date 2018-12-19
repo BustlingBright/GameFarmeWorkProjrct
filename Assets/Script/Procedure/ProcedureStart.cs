@@ -8,13 +8,17 @@ using GameFramework.DataTable;
 
 public class ProcedureStart : ProcedureBase
 {
+    protected override void OnInit(IFsm<IProcedureManager> procedureOwner)
+    {
+        base.OnInit(procedureOwner);
+        ConfigManger.Instance.LoadConfigs();
+    }
+
     protected override void OnEnter(IFsm<IProcedureManager> procedureOwner)
     {
         base.OnEnter(procedureOwner);
-        ConfigManger.Instance.LoadConfigs();
-        ////////////////////////////
 
-
+        
     }
 
 
@@ -22,7 +26,6 @@ public class ProcedureStart : ProcedureBase
     {
         base.OnUpdate(procedureOwner, elapseSeconds, realElapseSeconds);
         ChangeState<ProcedureMain>(procedureOwner);
-  
         SceneManger.Instance._SceneCompent.LoadScene(SceneLoadEnum.MainScene);
 
 

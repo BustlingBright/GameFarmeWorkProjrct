@@ -110,6 +110,8 @@ namespace UnityGameFramework.Runtime
         {
             m_Available = true;
             Visible = true;
+            transform.localPosition = Vector3.zero;
+            transform.localScale = Vector3.one;
         }
 
         /// <summary>

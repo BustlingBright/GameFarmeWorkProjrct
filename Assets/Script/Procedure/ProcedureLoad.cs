@@ -15,6 +15,7 @@ class ProcedureLoad: ProcedureBase
     protected override void OnInit(IFsm<IProcedureManager> procedureOwner)
     {
         base.OnInit(procedureOwner);
+       
     }
     protected override void OnEnter(IFsm<IProcedureManager> procedureOwner)
     {
@@ -24,8 +25,8 @@ class ProcedureLoad: ProcedureBase
     protected override void OnUpdate(IFsm<IProcedureManager> procedureOwner, float elapseSeconds, float realElapseSeconds)
     {
         base.OnUpdate(procedureOwner, elapseSeconds, realElapseSeconds);
+        //procedureOwner.SetData()
         ChangeState<ProcedureCreatePeople>(procedureOwner);
-        SceneManger.Instance.UnLoadAllScence();
         SceneManger.Instance._SceneCompent.LoadScene(SceneLoadEnum.CreateRoleScene);
     }
 

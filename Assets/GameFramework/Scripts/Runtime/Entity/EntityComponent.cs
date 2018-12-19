@@ -143,6 +143,7 @@ namespace UnityGameFramework.Runtime
             Transform transform = entityHelper.transform;
             transform.SetParent(this.transform);
             transform.localScale = Vector3.one;
+            transform.localPosition = Vector3.zero;
 
             m_EntityManager.SetEntityHelper(entityHelper);
 
@@ -228,6 +229,7 @@ namespace UnityGameFramework.Runtime
             Transform transform = entityGroupHelper.transform;
             transform.SetParent(m_InstanceRoot);
             transform.localScale = Vector3.one;
+            transform.localPosition = Vector3.zero;
 
             return m_EntityManager.AddEntityGroup(entityGroupName, instanceAutoReleaseInterval, instanceCapacity, instanceExpireTime, instancePriority, entityGroupHelper);
         }

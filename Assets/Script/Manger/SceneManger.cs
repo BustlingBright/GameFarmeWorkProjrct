@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using GameFramework.Scene;
 using UnityGameFramework.Runtime;
+using GameFramework;
 
-
+public class A:
 
 public class SceneManger:Singleton<SceneManger>
 {

@@ -16,15 +16,15 @@ public class ConfigManger:Singleton<ConfigManger>
     public void LoadConfigs()
     {
         _event.Subscribe(UnityGameFramework.Runtime.LoadDataTableSuccessEventArgs.EventId, LoadDataSetSuccessAction);
+        _event.Subscribe(UnityGameFramework.Runtime.LoadDataTableFailureEventArgs.EventId, (sender, e) => { Debug.Log(e.Id); });
         _data = GameEntry.GetComponent<DataTableComponent>();
-        _data.LoadDataTable<FormConfig>("FormConfig.txt", _configPath + "FormConfig.txt");
         _data.LoadDataTable<ModelConfig>("ModelConfig.txt", _configPath + "ModelConfig.txt");
+        _data.LoadDataTable<FormConfig>("FormConfig.txt", _configPath + "FormConfig.txt");
     }
 
     private void LoadDataSetSuccessAction(object sender, GameFramework.Event.GameEventArgs e)
     {
         _isLoad = true;
-        Debug.Log("数据表加载成功...");
     }
 
     public T GetConfig<T>(int Id) where T: IDataRow

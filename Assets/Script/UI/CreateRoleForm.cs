@@ -30,7 +30,7 @@ public class CreateRoleForm:UIFormLogic
     }
     public void SetModelThings(string configName,string introduce,string modelName)
     {
-        ModelManger.Instance._EntityComponent.ShowEntity<EntityWuShuang>(mc.Id, "Assets/ziyuan/Role/" + mc.MODEL, mc.CLASS);
+        ModelManger.Instance._EntityComponent.ShowEntity<EntityWuShuang>(mc.Id, "Assets/ziyuan/Role/" + mc.MODEL+".prefab", mc.CLASS);
         _configName.text = configName;
         _introduce.text = introduce;
     }
