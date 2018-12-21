@@ -20,7 +20,6 @@ class ProcedureLoad: ProcedureBase
     protected override void OnEnter(IFsm<IProcedureManager> procedureOwner)
     {
         base.OnEnter(procedureOwner);
-        UIManger.Instance._UIComponent.OpenUIForm(ConfigEnum.LoadingForm);
     }
     protected override void OnUpdate(IFsm<IProcedureManager> procedureOwner, float elapseSeconds, float realElapseSeconds)
     {

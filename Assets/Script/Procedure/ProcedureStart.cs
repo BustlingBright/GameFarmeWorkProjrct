@@ -5,6 +5,7 @@ using UnityGameFramework.Runtime;
 using GameFramework.Fsm;
 using UnityEngine.UI;
 using GameFramework.DataTable;
+using System.Text.RegularExpressions;
 
 public class ProcedureStart : ProcedureBase
 {
@@ -12,6 +13,9 @@ public class ProcedureStart : ProcedureBase
     {
         base.OnInit(procedureOwner);
         ConfigManger.Instance.LoadConfigs();
+       
+
+
     }
 
     protected override void OnEnter(IFsm<IProcedureManager> procedureOwner)

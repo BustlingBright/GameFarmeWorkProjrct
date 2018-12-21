@@ -20,6 +20,8 @@ public class ConfigManger:Singleton<ConfigManger>
         _data = GameEntry.GetComponent<DataTableComponent>();
         _data.LoadDataTable<ModelConfig>("ModelConfig.txt", _configPath + "ModelConfig.txt");
         _data.LoadDataTable<FormConfig>("FormConfig.txt", _configPath + "FormConfig.txt");
+        _data.LoadDataTable<NameConfig>("NameConfig.txt", _configPath + "NameConfig.txt");
+        _data.LoadDataTable<BanedTextConfig>("BanedTextConfig.txt", _configPath + "BanedTextConfig.txt");
     }
 
     private void LoadDataSetSuccessAction(object sender, GameFramework.Event.GameEventArgs e)

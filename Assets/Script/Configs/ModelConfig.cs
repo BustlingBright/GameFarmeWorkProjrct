@@ -71,8 +71,8 @@ public class ModelConfig : IDataRow
     INFO = text[index++];
     MODEL = text[index++];
   }
-    private void AvoidJIT()
-    {
-        new Dictionary<int, ModelConfig>();
-    }
+  private void AvoidJIT()
+  {
+    new Dictionary<int, ModelConfig > ();
+  }
 }

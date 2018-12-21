@@ -4,8 +4,6 @@ using GameFramework.Scene;
 using UnityGameFramework.Runtime;
 using GameFramework;
 
-public class A:
-
 public class SceneManger:Singleton<SceneManger>
 {
     private SceneComponent _sceneCompent;

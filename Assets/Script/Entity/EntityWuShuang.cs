@@ -11,7 +11,6 @@ public class EntityWuShuang:EntityLogic
     protected internal override void OnShow(object userData)
     {
         base.OnShow(userData);
-        UnityEngine.Debug.Log(111111111111111111);
     }
 
     protected internal override void OnUpdate(float elapseSeconds, float realElapseSeconds)
