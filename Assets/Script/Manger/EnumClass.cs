@@ -27,5 +27,6 @@ public enum SceneLoadEnum
 {
     StartScene,
     CreateRoleScene,
-    MainScene
+    MainScene,
+    HomeScene
 }

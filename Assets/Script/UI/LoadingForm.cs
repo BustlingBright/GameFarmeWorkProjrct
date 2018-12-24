@@ -13,24 +13,28 @@ public class LoadingForm : UIFormLogic
         base.OnInit(userData);
        _loadingSlider= transform.Find("Btns/Slider").GetComponent<Slider>();
         _runPerson = transform.Find("Btns/run").GetComponent<Image>();
-        StartCoroutine(Loading());
+
     }
 
-    IEnumerator Loading()
+    IEnumerator Loading(ConfigEnum configEnum)
     {
-        while(_loadingSlider.value<0.99f)
+        _loadingSlider.value = 0;
+        _runPerson.GetComponent<RectTransform>().SetLocalPositionX(-450 + _loadingSlider.value * 900);
+        while (_loadingSlider.value<0.99f)
         {
             _loadingSlider.value += 0.01f;
             _runPerson.GetComponent<RectTransform>().SetLocalPositionX(-450 + _loadingSlider.value * 900);
             yield return new WaitForSeconds(0.01f);
         }
         UIManger.Instance._UIComponent.CloseUIForm(UIForm);
-        UIManger.Instance._UIComponent.OpenUIForm(ConfigEnum.CreateRoleForm);
+        UIManger.Instance._UIComponent.OpenUIForm(configEnum);
     }
+
 
     protected internal override void OnOpen(object userData)
     {
         base.OnOpen(userData);
+        StartCoroutine(Loading((ConfigEnum)userData));
     }
 
     protected internal override void OnClose(object userData)

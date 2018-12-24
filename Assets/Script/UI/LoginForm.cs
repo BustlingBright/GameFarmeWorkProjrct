@@ -8,7 +8,6 @@ using System;
 
 public class LoginForm : UIFormLogic
 {
-
     private Button _enterBtn;
     private Button _exitBtn;
     private Button _registerBt;
@@ -59,5 +58,8 @@ public class LoginForm : UIFormLogic
     private void OnEnterClick()
     {
         /////////////
+
+        
     }
+
 }

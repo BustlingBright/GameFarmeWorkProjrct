@@ -118,7 +118,8 @@ public class CreateRoleForm:UIFormLogic
             }
             else
             {
-                ///////////////////////
+                UIManger.Instance._UIComponent.CloseUIForm(UIForm);
+                ProcedureCreatePeople.Load();
             }
         }
         else

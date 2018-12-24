@@ -25,6 +25,7 @@ class ProcedureMain : ProcedureBase
         base.OnUpdate(procedureOwner, elapseSeconds, realElapseSeconds);
         if(isLoad)
         {
+            procedureOwner.SetData<VarString>("NextScene", "CreateRoleScene");
             ChangeState<ProcedureLoad>(procedureOwner);
         }
     }

@@ -48,7 +48,6 @@ public class FastLoginForm:UIFormLogic
     private void OnEnterClick()
     {
         UIManger.Instance._UIComponent.CloseUIForm(UIForm);
-        UIManger.Instance._UIComponent.OpenUIForm(ConfigEnum.LoadingForm);
         proCom.Load();
 
     }
