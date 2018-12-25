@@ -30,7 +30,6 @@ public class LoadingForm : UIFormLogic
         UIManger.Instance._UIComponent.OpenUIForm(configEnum);
     }
 
-
     protected internal override void OnOpen(object userData)
     {
         base.OnOpen(userData);
